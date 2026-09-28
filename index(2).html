@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Currículo - Vinícius Gregório</title>
+
+<style>
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    background: #eef2f7;
+    color: #333;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #0f172a, #1e3a8a);
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px 100px;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 34px;
+}
+
+header p {
+    margin: 6px 0;
+    opacity: 0.9;
+}
+
+/* FOTO */
+.avatar-container {
+    position: relative;
+    margin-top: -70px;
+    text-align: center;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #38bdf8, #6366f1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    color: #fff;
+    font-weight: bold;
+    margin: auto;
+    border: 5px solid #fff;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* CARDS */
+.card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+}
+
+/* TÍTULOS */
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+h2::after {
+    content: "";
+    width: 40px;
+    height: 3px;
+    background: #3b82f6;
+    display: block;
+    margin-top: 5px;
+}
+
+/* LISTAS */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 8px;
+    padding-left: 18px;
+    position: relative;
+}
+
+ul li::before {
+    content: "▹";
+    color: #3b82f6;
+    position: absolute;
+    left: 0;
+}
+
+/* TAGS */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    background: #e0e7ff;
+    color: #3730a3;
+    padding: 6px 10px;
+    border-radius: 999px;
+    font-size: 13px;
+}
+
+/* RESPONSIVO */
+@media(max-width:600px){
+    header h1 { font-size: 26px; }
+    .avatar { width: 120px; height: 120px; font-size: 36px; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Vinícius Gregório</h1>
+    <p>Analista Desenvolvedor</p>
+    <p> Queluz - SP | 📞 (11) 95356-6985 | ✉ viniciusgr88@gmail.com | CNH AB</p>
+</header>
+
+<div class="avatar-container">
+    <div class="avatar">
+        <!-- Se a imagem falhar, aparece VG -->
+        <img src="img_v.jpg" alt="Foto" onerror="this.style.display='none'">
+        <span>VG</span>
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Resumo Profissional</h2>
+        <p>
+            Desenvolvedor em formação com experiência em <strong>Java, Spring e Oracle</strong>, 
+            atuando em sustentação de sistemas, resolução de incidentes e documentação técnica. 
+            Perfil comunicativo, proativo e com interesse em inovação e negócios.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Objetivo</h2>
+        <p>Desenvolver e aprender novas habilidades de comunicação, inovação, processos e conhecimentos em TI e vendas.</p>
+
+    </div>
+
+    <div class="card">
+        <h2>Experiência</h2>
+        <p><strong>Estagiário Analista Desenvolvedor na Liax Tech</strong> — 2025 até o momento</p>
+        <ul>
+            <li>Atuação com sistemas Java e Spring</li>
+            <li>Suporte e resolução de incidentes</li>
+            <li>Documentação técnica de sistemas</li>
+            <li>Comunicação com stakeholders</li>
+            <li>Atuação em demandas com uso de metodologias ágeis</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>Formação</h2>
+        <p><strong>FATEC</strong> — Análise e Desenvolvimento de Sistemas (Conclusão 2026)</p>
+        <p><strong>ETEC</strong> — Desenvolvimento de Sistemas (2023)</p>
+    </div>
+
+    <!--
+    <div class="card">
+        <h2>Habilidades</h2>
+        <div class="tags">
+            <span class="tag">Java</span>
+            <span class="tag">Spring</span>
+            <span class="tag">Oracle</span>
+            <span class="tag">Git</span>
+            <span class="tag">ServiceNow</span>
+            <span class="tag">ClickUp</span>
+        </div>
+    </div>
+    -->
+
+    <div class="card">
+        <h2>Cursos</h2>
+        <ul>
+            <li>Java POO — Curso em Vídeo</li>
+            <li>Git e GitHub — Curso em Vídeo</li>
+            <li>Algoritmos — Curso em Vídeo</li>
+            <li>Curso de Hardware — ETEC Cruzeiro</li>
+        </ul>
+    </div>
+    <div class="card">
+    <h2>Habilidades Técnicas</h2>
+    <div class="tags">
+        <span class="tag">Java </span> <!--Intermediário ★★★☆☆-->
+        <span class="tag">Spring</span>
+        <span class="tag">Oracle</span>
+        <span class="tag">ServiceNow</span>
+        <span class="tag">ClickUp</span>
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">Git</span>
+        <span class="tag">Lógica de Programação</span>
+    </div>
+</div>
+
+<div class="card">
+    <h2>Soft Skills</h2>
+    <ul>
+        <li>Comunicação eficaz</li>
+        <li>Facilidade para lidar com pessoas</li>
+        <li>Trabalho em equipe</li>
+        <li>Disposição para aprender</li>
+        <li>Interesse por vendas e negócios</li>
+    </ul>
+</div>
+
+<div class="card">
+    <h2>Atividades & Diferenciais</h2>
+    <ul>
+        <li>Músico — Projeto Guri</li>
+        <li>Campeão de futsal regional JEESP</li>
+    </ul>
+</div>
+<div class="card">
+    <h2>Projetos</h2>
+        <div style="margin-bottom:15px">
+        <p><strong>Sistema IOT para prevenção de incêndios (Projeto Acadêmico)</strong></p>
+        <p style="font-size:14px; color:#555;">
+            Desenvolvimento de um sistema para detecção precocie de gás e fumaça utilizando JavaScript com Node.js e SQL.
+            Implementação API e front-end funcionais com registro de histórico de alertas e dashboards.
+        </p>
+        <div class="tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">SQL</span>
+            <span class="tag">Testes automatizados</span>
+            <span class="tag">Documentação técnica</span>
+            <span class="tag">CI/CDI</span>
+        </div>
+        <p>
+    <strong>Sistema IOT para prevenção de incêndios</strong> —
+    <a href="https://github.com/Vini-Gregorio/SensorFumaca" target="_blank">
+        Ver projeto
+    </a>
+</p>
+
+    <div style="margin-bottom:15px">
+        <p><strong>Sistema de Cadastro de produtos (Projeto Acadêmico)</strong></p>
+        <p style="font-size:14px; color:#555;">
+            Desenvolvimento de um sistema para cadastro de produtos utilizando PHP e SQL.
+            Implementação de funcionalidades básicas e organização de informações.
+        </p>
+        <div class="tags">
+            <span class="tag">PHP</span>
+            <span class="tag">SQL</span>
+        </div>
+        <p>
+    <strong>Sistema de Cadastro e Consulta de produtos</strong> —
+    <a href="https://github.com/Vini-Gregorio/programacaoWeb_4ads" target="_blank">
+        Ver projeto
+    </a>
+</p>
+    </div>
+
+    <div style="margin-bottom:15px">
+        <p><strong>Projetos Web (HTML e CSS)</strong></p>
+        <p style="font-size:14px; color:#555;">
+            Criação de páginas web responsivas com foco em estrutura, estilização e boas práticas.
+        </p>
+        <div class="tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Design Responsivo</span>
+            <span class="tag">Landing Page</span>
+        </div>
+    </div>
+
+    <div>
+        <p><strong>Versionamento com GitHub</strong></p>
+        <p style="font-size:14px; color:#555;">
+            Utilização de Git e GitHub para controle de versões e publicação de projetos.
+        </p>
+        <div class="tags">
+            <span class="tag">Git</span>
+            <span class="tag">GitHub</span>
+        </div>
+    </div>
+
+
+</div>
+
+
+</div>
+
+</body>
+</html>
